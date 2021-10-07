@@ -116,7 +116,7 @@ export default class SelectMultiple extends Component {
   keyExtractor = (item, index) => index.toString()
 
   render () {
-    const { dataSource } = this.state
+    const dataSource = this.getRowData(this.state)
     const { style, flatListProps, keyExtractor } = this.props
     return (
       <FlatList
